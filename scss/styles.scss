@@ -3,24 +3,53 @@
 
 
 body{
-    background-color: bg-body;
+    background-color: $color-letra;
 }
 h1{
-    font-family: tituloh1;
-    color: colorh1;
+    font-family: $tituloh1;
+    color: $colorh1;
 }
 
 div{
     width:100px;
     height: 100px;
-    background-color: bg-body;
+    background-color: $bg-body;
     padding: 15px;
 
     p{
         font-size: 20px;
-        color:color-letra;
-        font-family:texto-contenido;
+        color:$color-letra;
+        font-family:$texto-contenido;
     }
 }
 
+/*CONTENEDORES*/
+.contenedores-imagenes{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+    label{
+        border: solid 1px;
+        padding: 8px 15px;
+        width: 150px;
+        text-align: center;
+        cursor: pointer;
 
+        &:hover{
+            background-color: $color-letra;
+            border: none;
+        }
+    }
+}
+
+.navegador-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
