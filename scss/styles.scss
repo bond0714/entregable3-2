@@ -1,0 +1,26 @@
+@import "variables";
+@import "bucles";
+
+
+body{
+    background-color: bg-body;
+}
+h1{
+    font-family: tituloh1;
+    color: colorh1;
+}
+
+div{
+    width:100px;
+    height: 100px;
+    background-color: bg-body;
+    padding: 15px;
+
+    p{
+        font-size: 20px;
+        color:color-letra;
+        font-family:texto-contenido;
+    }
+}
+
+

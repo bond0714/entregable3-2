@@ -1,3 +1,23 @@
+/*Colores*/
+body {
+  background-color: bg-body;
+}
 
+h1 {
+  font-family: tituloh1;
+  color: colorh1;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: bg-body;
+  padding: 15px;
+}
+div p {
+  font-size: 20px;
+  color: color-letra;
+  font-family: texto-contenido;
+}
 
 /*# sourceMappingURL=styles.css.map */
