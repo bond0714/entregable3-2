@@ -82,14 +82,73 @@ h1 {
   align-items: end;
 }
 
+/*PIE DE PAGINA*/
 .piedepagina {
   display: flex;
+  flex-direction: row;
   align-content: center;
   justify-content: center;
+  align-items: center;
+  justify-items: center;
   background-color: black;
   padding: 20px;
-  gap: 20px;
+  gap: 10%;
   border: 10%;
+}
+@media (max-width: 768px) {
+  .piedepagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .piedepagina div {
+    text-align: center;
+  }
+}
+.piedepagina h2 {
+  color: rgb(233, 207, 211);
+  padding-left: 50%;
+}
+.piedepagina .direccion {
+  color: rgb(233, 207, 211);
+}
+.piedepagina ul {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 59, 88);
+  gap: 30px;
+}
+.piedepagina ul li {
+  list-style: none;
+}
+.piedepagina ul li:hover {
+  color: rgb(244, 112, 134);
+}
+@media (max-width: 768px) {
+  .piedepagina {
+    display: flex;
+    flex-direction: column;
+  }
+  .piedepagina ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    padding: 0px;
+  }
+}
+.piedepagina .icosocial {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 59, 88);
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  gap: 20px;
 }
 
 footer {

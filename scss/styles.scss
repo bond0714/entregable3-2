@@ -94,14 +94,81 @@ h1{
     align-items: end;
 }
 
+/*PIE DE PAGINA*/
 .piedepagina{
     display: flex;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
     background-color: $color-footer;
     padding: 20px;
-    gap:20px;
+    gap:10%;
     border: 10%;
+    @media (max-width:768px){
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        div{
+            text-align: center;
+        }
+    }
+    h2{
+        color: $color-rosaclaro;
+        padding-left: 50%;
+    }
+    .direccion{
+        
+        color: $color-rosaclaro;
+    }
+
+    
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        color: $color-textnav;
+        gap: 30px;
+        
+
+        li{
+            list-style: none;
+            &:hover{
+                color: $color-textnavlink;
+                
+            }
+            
+        }
+        
+    }
+    @media (max-width:768px){
+        display:flex;
+        flex-direction:column;
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            padding: 0px;
+
+        }
+    }
+    
+    .icosocial{
+        display: flex;
+        flex-direction: row;
+        color:$color-textnav;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        
+        gap: 20px;
+    }
 }
 
 footer{
