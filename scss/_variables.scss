@@ -1,5 +1,5 @@
 /*Colores*/
-$color-fondo: rgb(255, 239, 242);
+$color-fondo: rgb(255, 255, 255);
 $bg-colormenu: rgb(255, 190, 201);
 $color-letra: rgb(0, 40, 220);
 $tituloh1: 'Droid Sans Mono', monospace;
@@ -8,5 +8,13 @@ $texto-contenido: 'arial', sans-serif;
 $color-textnav: rgb(255, 59, 88);
 $color-textnavlink: rgb(244, 112, 134);
 $sizetextnav: 120%;
+$color-footer: black;
+
+
+//Variables de tamaño de dispositivos//
+$mobile: (max-width:480px);
+$tablet: (min-width:480px) and (max-width:728px);
+$desktop:(min-width:1024px);
+//Fin de variables de dispositivo//
 
 
