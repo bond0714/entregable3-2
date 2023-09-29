@@ -118,6 +118,7 @@ h1{
     h2{
         color: $color-rosaclaro;
         padding-left: 50%;
+        
     }
     .direccion{
         
@@ -154,6 +155,11 @@ h1{
             align-content: center;
             justify-items: center;
             padding: 0px;
+            
+            }
+        h2{
+            padding-left: 0%;
+        }
 
         }
     }
@@ -169,7 +175,7 @@ h1{
         
         gap: 20px;
     }
-}
+
 
 footer{
     padding-top: 10%;

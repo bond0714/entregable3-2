@@ -139,8 +139,12 @@ h1 {
     justify-items: center;
     padding: 0px;
   }
+  .piedepagina h2 {
+    padding-left: 0%;
+  }
 }
-.piedepagina .icosocial {
+
+.icosocial {
   display: flex;
   flex-direction: row;
   color: rgb(255, 59, 88);
