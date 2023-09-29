@@ -1,72 +1,17 @@
-/*Colores*/
-body {
-  background-color: rgb(255, 227, 233);
-}
+/* Error: Undefined variable.
+ *    ,
+ * 58 |         color:$color-textnavlink;
+ *    |               ^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\styles.scss 58:15  root stylesheet */
 
-h1 {
-  font-family: "Droid Sans Mono", monospace;
-  color: red;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 58 \2502          color:$color-textnavlink;\d\a    \2502                ^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\styles.scss 58:15  root stylesheet";
 }
-
-div {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(255, 190, 201);
-}
-div div .logonav {
-  width: 70%;
-  height: 70%;
-  gap: 20px;
-  padding: 10px;
-}
-@media (min-width: 265px) {
-  div div .logonav {
-    width: 200px;
-    height: 200px;
-    gap: 5px;
-  }
-}
-div .lista-nav li {
-  display: inline;
-  margin-top: 10px;
-  align-items: center;
-  justify-content: center;
-}
-div p {
-  font-size: 20px;
-  color: rgb(0, 40, 220);
-  font-family: "arial", sans-serif;
-}
-
-/*CONTENEDORES*/
-.contenedores-imagenes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.contenedores-imagenes label {
-  border: solid 1px;
-  padding: 8px 15px;
-  width: 150px;
-  text-align: center;
-  cursor: pointer;
-}
-
-/*Modificaciones Bootstrap*/
-.navbar {
-  padding-top: 0px;
-  font-size: 20px;
-}
-.navbar a:hover {
-  color: rgb(255, 0, 157);
-  font-weight: 600;
-  text-decoration: overline;
-}
-.navbar a:active {
-  color: rgb(255, 0, 157);
-  text-decoration: none;
-}
-
-/*# sourceMappingURL=styles.css.map */

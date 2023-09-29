@@ -1,50 +1,33 @@
 @import "variables";
 @import "bucles";
 
-
 body{
     background-color:$color-fondo;
 }
-
 
 h1{
     font-family: $tituloh1;
     color: $colorh1;
 }
 
-div{
+.logonav{
     width:100%;
     height: 100%;
-    background-color: $bg-colormenu;
     
-    div .logonav{
-        
+    div{
         width: 70%;
         height: 70%;
         gap:20px;
         padding: 10px;
-        
-        @media (min-width: 265px){
+    }
+            
+    @media (min-width: 265px){
             width: 200px;
             height: 200px;
             gap: 5px;
         }
 
-    }
-
-    .lista-nav li{
-        display:inline;
-        margin-top: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    p{
-        font-size: 20px;
-        color:$color-letra;
-        font-family:$texto-contenido;
-    }
-}
+    }    
 
 /*CONTENEDORES*/
 .contenedores-imagenes{
@@ -64,12 +47,16 @@ div{
         }
     }
 
-
 /*Modificaciones Bootstrap*/
 
 .navbar{
     padding-top: 0px;
-    font-size: 20px;
+    font-size: $sizetextnav;
+    color: red;
+
+    a:link{
+        color:$color-textnavlink;
+    }
 
     a:hover{
         color: $color-textnav;
@@ -80,6 +67,18 @@ div{
         color: $color-textnav;
         text-decoration: none;
     }
+    ul{
+        padding-left: 50px;
     
+    }
+    &-nav{
+        gap:30px;
+    }
+    
+}
+
+.container-fluid{
+    background-color: $bg-colormenu;
+    padding:20px;
 }
 
