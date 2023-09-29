@@ -27,7 +27,7 @@ h1{
         padding: 10px;
     }
             
-   /* @media (min-width: 265px){
+/* @media (min-width: 265px){
             width: 200px;
             height: 200px;
             gap: 5px;
@@ -58,10 +58,10 @@ h1{
 .navbar{
     padding-top: 0px;
     font-size: $sizetextnav;
-    
+    color: red;
 
-    a{
-        color:$color-textnavlink;
+    a:link{
+        color:$color-textnav;
     }
 
     a:hover{
