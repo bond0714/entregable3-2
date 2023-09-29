@@ -11,8 +11,9 @@ h1{
 }
 
 .logonav{
-    width:100%;
-    height: 100%;
+    width:50%;
+    height: 50%;
+    padding: 20px;
     
     div{
         width: 70%;
@@ -47,14 +48,14 @@ h1{
         }
     }
 
-/*Modificaciones Bootstrap*/
+/*MODIFICACIONES EN BOOTSTRAP*/
 
 .navbar{
     padding-top: 0px;
     font-size: $sizetextnav;
-    color: red;
+    
 
-    a:link{
+    a{
         color:$color-textnavlink;
     }
 
@@ -82,3 +83,8 @@ h1{
     padding:20px;
 }
 
+.carousel-item{
+    width: 100%;
+    height: 400px;
+    align-items: end;
+}

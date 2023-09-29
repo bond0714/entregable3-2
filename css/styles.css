@@ -1,17 +1,81 @@
-/* Error: Undefined variable.
- *    ,
- * 58 |         color:$color-textnavlink;
- *    |               ^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\styles.scss 58:15  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 58 \2502          color:$color-textnavlink;\d\a    \2502                ^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\styles.scss 58:15  root stylesheet";
+/*Colores*/
+body {
+  background-color: rgb(255, 239, 242);
 }
+
+h1 {
+  font-family: "Droid Sans Mono", monospace;
+  color: black;
+}
+
+.logonav {
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+}
+.logonav div {
+  width: 70%;
+  height: 70%;
+  gap: 20px;
+  padding: 10px;
+}
+@media (min-width: 265px) {
+  .logonav {
+    width: 200px;
+    height: 200px;
+    gap: 5px;
+  }
+}
+
+/*CONTENEDORES*/
+.contenedores-imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.contenedores-imagenes label {
+  border: solid 1px;
+  padding: 8px 15px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*MODIFICACIONES EN BOOTSTRAP*/
+.navbar {
+  padding-top: 0px;
+  font-size: 120%;
+}
+.navbar a {
+  color: rgb(244, 112, 134);
+}
+.navbar a:hover {
+  color: rgb(255, 59, 88);
+  font-weight: 600;
+  text-decoration: overline;
+}
+.navbar a:active {
+  color: rgb(255, 59, 88);
+  text-decoration: none;
+}
+.navbar ul {
+  padding-left: 50px;
+}
+.navbar-nav {
+  gap: 30px;
+}
+
+.container-fluid {
+  background-color: rgb(255, 190, 201);
+  padding: 20px;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 400px;
+  align-items: end;
+}
+
+/*# sourceMappingURL=styles.css.map */
