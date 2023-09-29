@@ -48,6 +48,9 @@ h1 {
   font-size: 120%;
   color: red;
 }
+.navbar a {
+  color: rgb(255, 59, 88);
+}
 .navbar a:link {
   color: rgb(255, 59, 88);
 }

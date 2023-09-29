@@ -55,6 +55,10 @@ h1{
     font-size: $sizetextnav;
     color: red;
 
+    a{
+        color:$color-textnav;
+    }
+
     a:link{
         color:$color-textnav;
     }
