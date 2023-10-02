@@ -97,23 +97,82 @@ h1{
 /*BODY - CONTENIDO*/
 
 
-/*PIE DE PAGINA*/
 .intro{
     display: grid;
-    background-color: $color-rosaclaro;
     gap: 20px;
-    margin-left: 10px;
-    grid-template-columns: auto auto auto auto auto;
+    padding: 5%;
+    text-align: center;
+    width: 100%;
 
-    div{
-        background-color: $color-rosaclaro;
-        color: $negro;
-        text-align: start;
-        
+    
+    /*padding: 20px;*/
+    grid-template-areas: 
+        "textointro foto1 foto2 foto3"
+        "botonintro foto1 foto2 foto3";
+    
+    *{
+        border-radius: 25px;
     }
+    @media (max-width:768px){
+        grid-template-areas:
+        "textointro textointro textointro"
+        "foto1 foto2 foto3"
+        "botonintro botonintro botonintro";
+    }
+    
+}
+.textointro{
+    grid-area: textointro;
+    text-align:start;
+    padding-right: 20px;
+    color: $gris;
+    
+}
+.foto1{
+    grid-area: foto1;
+    
+}
+.foto2{
+    grid-area:foto2;
+    
+}
+.foto3{
+    grid-area: foto3;
+    
+}
+.botonintro{
+    grid-area: botonintro;
+    border: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-image: linear-gradient(
+        150deg,
+        #ff4b96,
+        rgb(244, 124, 255),
+        #ffc6ee
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    
+    &:hover{
+        box-shadow: .5rem .5rem 1rem #ccc,
+            -5rem -.5rem 1rem #fff;
+    }
+    &:active{
+        transform: scale(.9);
+    }
+    
 }
 
 
+/*PIE DE PAGINA*/
 .piedepagina{
     display: flex;
     flex-direction: row;
