@@ -12,6 +12,7 @@ body {
 h1 {
   font-family: "Droid Sans Mono", monospace;
   color: black;
+  text-align: left;
 }
 
 .logonav {
@@ -24,6 +25,11 @@ h1 {
   height: 70%;
   gap: 20px;
   padding: 10px;
+}
+
+/*Modificador de Links principal*/
+a {
+  text-decoration: none;
 }
 
 /*MODIFICACIONES EN BOOTSTRAP*/
@@ -168,6 +174,71 @@ h1 {
   transform: scale(0.9);
 }
 
+/*FIN DE MODIFICADORES INICIO*/
+.quienes {
+  display: grid;
+  gap: 20px;
+  padding: 5%;
+  text-align: center;
+  width: 100%;
+  grid-template-areas: "fotoquienes pquienes" "fotoquienes botonintro";
+}
+.quienes img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 1rem #ccc;
+}
+.quienes p {
+  grid-area: pquienes;
+  text-align: start;
+  padding: 10px 10px;
+  color: rgb(116, 116, 116);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .quienes {
+    grid-template-areas: "fotoquienes pquienes" "fotoquienes botonintro";
+  }
+  .quienes .fotoquienes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .quienes .botonintro {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .quienes {
+    grid-template-areas: "fotoquienes" "pquienes" "botointro";
+  }
+  .quienes #pquienes h1 {
+    text-align: center;
+  }
+  .quienes .botonintro {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .quienes {
+    grid-template-areas: "fotoquienes" "pquienes" "botonintro";
+  }
+  .quienes .botonintro {
+    width: 100%;
+    height: 80px;
+  }
+}
+
+.fotoquienes {
+  grid-area: fotoquienes;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: baseline;
+  align-items: stretch;
+}
+
 /*PIE DE PAGINA*/
 .piedepagina {
   display: flex;
@@ -195,6 +266,13 @@ h1 {
 .piedepagina h2 {
   color: black;
   padding-left: 50%;
+}
+.piedepagina a {
+  color: rgb(255, 59, 88);
+}
+.piedepagina a:hover {
+  color: rgb(170, 0, 130);
+  size: 20px;
 }
 .piedepagina .direccion {
   color: black;
