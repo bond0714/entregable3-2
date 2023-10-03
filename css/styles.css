@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Colores*/
 * {
   padding: 0;
@@ -172,7 +173,7 @@ a {
   color: #fff;
 }
 .botonintro:hover {
-  box-shadow: 0.5rem 0.5rem 1rem #ccc, -5rem -0.5rem 1rem #fff;
+  box-shadow: 0.5rem 0.5rem 1rem #ccc;
 }
 .botonintro:active {
   transform: scale(0.9);
@@ -233,6 +234,276 @@ a {
 
 .fotoquienes {
   grid-area: fotoquienes;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: baseline;
+  align-items: stretch;
+}
+
+/*TERMINA PAGINA NOSOTROS*/
+/*SECCIÓN NUESTROS PRODUCTOS*/
+.nuestrosproductos {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: start;
+  display: grid;
+  grid-template-areas: "textonp textonp textonp textonp" "producto1 producto2 producto3 producto4";
+  gap: 20px;
+  /*Ajusted de GRID*/
+}
+.nuestrosproductos h1 {
+  padding-bottom: 5%;
+}
+.nuestrosproductos img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0;
+  box-shadow: 0.5rem 0.5rem 1rem #b1b1b1;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nuestrosproductos {
+    grid-template-areas: "textonp textonp" "producto1 producto2" "producto3 producto4";
+  }
+}
+@media (max-width: 767px) {
+  .nuestrosproductos {
+    /*.botonintro{
+        width: 100%;
+    }*/
+    grid-template-areas: "textonp textonp" "producto1 producto2" "producto3 producto4";
+  }
+  .nuestrosproductos .textonp h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 470px) {
+  .nuestrosproductos {
+    grid-template-areas: "textonp" "producto1" "producto2" "producto3" "producto4";
+  }
+  .nuestrosproductos .textonp p {
+    text-align: start;
+    padding: 20%;
+  }
+  .nuestrosproductos .producto1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 10%;
+  }
+  .nuestrosproductos .producto1 p {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nuestrosproductos .producto1 h2 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .nuestrosproductos .producto2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 10%;
+  }
+  .nuestrosproductos .producto2 p {
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .nuestrosproductos .producto2 h2 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .nuestrosproductos .producto3 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 10%;
+  }
+  .nuestrosproductos .producto3 p {
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .nuestrosproductos .producto3 h2 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .nuestrosproductos .producto4 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 10%;
+  }
+  .nuestrosproductos .producto4 p {
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .nuestrosproductos .producto4 h2 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.textonp {
+  grid-area: textonp;
+  width: 100%;
+  height: 100%;
+}
+
+.precio1 {
+  font-weight: 500;
+}
+
+.producto1 {
+  grid-area: producto1;
+  /*img{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 0;
+      /*box-shadow: .5rem .5rem 1rem #b1b1b1;
+  }*/
+}
+.producto1 p {
+  width: 200px;
+  text-align: left;
+}
+.producto1 h2 {
+  text-align: left;
+  padding-top: 15%;
+}
+
+.producto2 {
+  grid-area: producto2;
+}
+.producto2 p {
+  width: 200px;
+  text-align: left;
+}
+.producto2 h2 {
+  text-align: left;
+  padding-top: 15%;
+}
+
+.producto3 {
+  grid-area: producto3;
+}
+.producto3 p {
+  width: 200px;
+  text-align: left;
+}
+.producto3 h2 {
+  text-align: left;
+  padding-top: 15%;
+}
+
+.producto4 {
+  grid-area: producto4;
+}
+.producto4 p {
+  width: 200px;
+  text-align: left;
+}
+.producto4 h2 {
+  text-align: left;
+  padding-top: 15%;
+}
+
+/*Termina pagina productos*/
+/*CONTACTO*/
+.tituloconta {
+  padding: 20px;
+}
+
+.formulario {
+  display: grid;
+  gap: 20px;
+  padding: 5%;
+  text-align: center;
+  width: 100%;
+  grid-template-areas: "imgform formulariosm" "imgform botonintro";
+}
+.formulario img {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 1rem #ccc;
+}
+.formulario p {
+  grid-area: pcontacto;
+  text-align: start;
+  padding: 10px 10px;
+  color: rgb(116, 116, 116);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .formulario {
+    grid-template-areas: "imgform" "formulariosm";
+  }
+  .formulario .imgform {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formulario .botonintro {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .formulario {
+    grid-template-areas: "imgform" "formulariosm";
+  }
+  .formulario #pquienes h1 {
+    text-align: center;
+  }
+  .formulario .botonintro {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .formulario {
+    grid-template-areas: "imgform" "formulariosm";
+  }
+  .formulario .botonintro {
+    width: 100%;
+    height: 80px;
+  }
+}
+
+.pcontacto {
+  padding: 20px;
+}
+
+.imgform {
+  grid-area: imgform;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -320,6 +591,30 @@ a {
   align-content: center;
   justify-items: center;
   gap: 20px;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 150px;
+  right: 30px;
+  background-color: #6e0033;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 37px;
+  z-index: 100;
+  box-shadow: 0.5rem 0.5rem 1rem #ccc;
+}
+@media (max-width: 768px) {
+  .whatsapp {
+    visibility: hidden;
+  }
+}
+
+.whatsapp-icon {
+  margin-top: 10px;
 }
 
 footer {
