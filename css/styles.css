@@ -74,6 +74,9 @@ a {
 .navbar-nav {
   gap: 30px;
 }
+.navbar-toogler {
+  background-color: rgb(244, 112, 134);
+}
 
 .container-fluid {
   background-color: rgb(255, 190, 201);
@@ -97,6 +100,11 @@ a {
 }
 .intro img {
   box-shadow: 0.5rem 0.5rem 1rem #b1b1b1;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.intro img:hover {
+  transform: scale(0.9);
 }
 .intro p {
   text-align: center;
@@ -196,6 +204,11 @@ a {
   width: 50%;
   border-radius: 10px;
   box-shadow: 0.5rem 0.5rem 1rem #ccc;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.quienes img:hover {
+  transform: scale(1.2);
 }
 .quienes p {
   grid-area: pquienes;
@@ -273,6 +286,11 @@ a {
   border-radius: 8px;
   margin: 0;
   box-shadow: 0.5rem 0.5rem 1rem #b1b1b1;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.nuestrosproductos img:hover {
+  transform: scale(1.2);
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .nuestrosproductos {
@@ -390,14 +408,6 @@ a {
 
 .producto1 {
   grid-area: producto1;
-  /*img{
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin: 0;
-      /*box-shadow: .5rem .5rem 1rem #b1b1b1;
-  }*/
 }
 .producto1 p {
   width: 200px;
@@ -445,6 +455,160 @@ a {
 }
 
 /*Termina pagina productos*/
+/*CLIENTES*/
+.nuestrosclientes {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5%;
+  justify-content: center;
+  justify-items: center;
+  align-items: stretch;
+  align-content: start;
+  display: grid;
+  grid-template-areas: "textonc textonc textonc" "cliente1 cliente2 cliente3";
+  gap: 20px;
+  /*Ajusted de GRID*/
+}
+.nuestrosclientes h1 {
+  padding-bottom: 5%;
+}
+.nuestrosclientes img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0;
+  box-shadow: 0.5rem 0.5rem 1rem #b1b1b1;
+  transition: 0.5s;
+  filter: opacity(0.4);
+}
+.nuestrosclientes img:hover {
+  filter: opacity(2);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nuestrosclientes {
+    grid-template-areas: "textonc textonc" "cliente1 cliente2" "cliente3 cliente3";
+  }
+}
+@media (max-width: 767px) {
+  .nuestrosclientes {
+    grid-template-areas: "textonc textonc" "cliente1 cliente2" "cliente3 cliente3";
+  }
+  .nuestrosclientes .textonc h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 470px) {
+  .nuestrosclientes {
+    grid-template-areas: "textonc" "cliente1" "cliente2" "cliente3";
+  }
+  .nuestrosclientes .textonc p {
+    text-align: start;
+    padding: 20%;
+  }
+  .nuestrosclientes .cliente1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 10%;
+  }
+  .nuestrosclientes .cliente1 p {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nuestrosclientes .cliente1 h2 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .nuestrosclientes .cliente2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 10%;
+  }
+  .nuestrosclientes .cliente2 p {
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .nuestrosclientes .cliente2 h2 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .nuestrosclientes .cliente3 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 10%;
+  }
+  .nuestrosclientes .cliente3 p {
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .nuestrosclientes .cliente3 h2 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.textonc {
+  grid-area: textonc;
+  width: 100%;
+  height: 100%;
+}
+
+.cliente1 {
+  grid-area: cliente1;
+}
+.cliente1 p {
+  width: 200px;
+  text-align: left;
+}
+.cliente1 h2 {
+  text-align: left;
+  padding-top: 15%;
+}
+
+.cliente2 {
+  grid-area: cliente2;
+}
+.cliente2 p {
+  width: 200px;
+  text-align: left;
+}
+.cliente2 h2 {
+  text-align: left;
+  padding-top: 15%;
+}
+
+.cliente3 {
+  grid-area: cliente3;
+}
+.cliente3 p {
+  width: 200px;
+  text-align: left;
+}
+.cliente3 h2 {
+  text-align: left;
+  padding-top: 15%;
+}
+
+/*Termina CLIENTES*/
 /*CONTACTO*/
 .tituloconta {
   padding: 20px;
