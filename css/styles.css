@@ -781,6 +781,11 @@ a {
     visibility: hidden;
   }
 }
+.whatsapp:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+  background-color: rgb(98, 255, 98);
+}
 
 .whatsapp-icon {
   margin-top: 10px;
