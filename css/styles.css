@@ -17,7 +17,7 @@ h1 {
 }
 
 .logonav {
-  width: 50%;
+  width: 60%;
   height: 50%;
   padding: 20px;
 }
@@ -44,6 +44,10 @@ a {
 }
 
 .navbar {
+  width: 100%;
+  max-width: 100%;
+  min-width: 350px;
+  margin: auto;
   padding-top: 0px;
   font-size: 120%;
 }
