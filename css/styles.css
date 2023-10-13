@@ -269,7 +269,7 @@ a {
   padding: 5%;
   justify-content: center;
   justify-items: center;
-  align-items: center;
+  align-items: stretch;
   align-content: start;
   display: grid;
   grid-template-areas: "textonp textonp textonp textonp" "producto1 producto2 producto3 producto4";
