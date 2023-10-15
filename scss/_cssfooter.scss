@@ -1,0 +1,124 @@
+@import "variables";
+
+/*PIE DE PAGINA*/
+
+.piedepagina{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-image: $colorfoot2;
+    padding: 20px;
+    gap:10%;
+    border: 10%;
+    @media (max-width:768px){
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        div{
+            text-align: center;
+        }
+    }
+    h2{
+        color:$negro;
+        padding-left: 50%;
+        
+    }
+    a{
+        color: $color-textnav;
+        &:hover{
+            color: $resaltado;
+        }
+    }
+    
+    .direccion{
+        
+        color:$negro;
+    }
+
+    
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        color: $color-textnav;
+        gap: 30px;
+        
+
+        li{
+            list-style: none;
+            &:hover{
+                color: $color-textnavlink;
+                
+            }
+            
+        }
+        
+    }
+    @media (max-width:768px){
+        display:flex;
+        flex-direction:column;
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            padding: 0px;
+            
+            }
+        h2{
+            padding-left: 0%;
+        }
+
+        }
+    }
+    
+    .icosocial{
+        display: flex;
+        flex-direction: row;
+        color:$color-textnav;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        
+        gap: 20px;
+    }
+
+.whatsapp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:150px;
+        right:30px;
+        background-color: $resaltado;
+        color:$color-rosaclaro;
+        border-radius:50%;
+        text-align:center;
+        font-size:37px;
+        z-index:100;
+        box-shadow: .5rem .5rem 1rem $color-rosaclaro;
+        @media (max-width:768px){
+        visibility: hidden;
+        
+        }
+        &:hover{
+            transition: .5s;
+            transform:scale(1.2);
+            background-color:$color-fondo;
+            color:$resaltado;
+
+        }
+    }
+    
+    .whatsapp-icon {
+        margin-top:10px;
+    }
+footer{
+    padding-top: 10%;
+}

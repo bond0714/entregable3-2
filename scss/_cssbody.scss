@@ -1,0 +1,132 @@
+@import "variables";
+/*BODY - CONTENIDO*/
+
+.intro{
+    display: grid;
+    gap: 20px;
+    padding: 5%;
+    text-align: center;
+    width: 100%;
+    grid-template-areas: 
+        "textointro foto1 foto2 foto3"
+        "botonintro foto1 foto2 foto3";
+
+        
+img{
+    box-shadow: .5rem .5rem 1rem #b1b1b1;
+    transition:0.9s;
+    object-fit: cover;
+    }
+    img:hover{
+        transform: scale(.9);
+    }
+
+    p{
+        text-align: center;
+        color: $gris;
+        }
+
+
+#parrafointro{        
+    text-align: left;
+    color: $gris;
+}        
+    
+*{
+    border-radius: 25px;
+}
+
+    @media (min-width:768px) and (max-width:1023px){
+        .botonintro{
+            width: 100%;
+        }
+        grid-template-areas:
+        "textointro textointro textointro"
+        "foto1 foto2 foto3"
+        "botonintro botonintro botonintro";
+    }
+    @media (max-width:767px){
+        .botonintro{
+
+            width: 100%;
+        }
+        grid-template-areas:
+        "textointro textointro "
+        "foto1 foto2"
+        "foto3 foto3"
+        "botonintro botonintro";
+    }
+    @media (max-width:390px){
+        .botonintro{
+            width: 100%;
+            height: 80px;
+        }
+        grid-template-areas:
+        "textointro"
+        "foto1"
+        "foto2"
+        "foto3"
+        "botonintro";
+    }
+    
+}
+.textointro{
+    grid-area: textointro;
+    text-align:start;
+    padding-right: 20px;
+    color: $gris;
+    
+}
+.foto1{
+    grid-area: foto1;
+    
+}
+.foto2{
+    grid-area:foto2;
+    
+}
+.foto3{
+    grid-area: foto3;
+    
+}
+
+
+.botonintro{
+    grid-area: botonintro;
+    
+    border: 0;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-image: linear-gradient(
+        150deg,
+        #ff4b96,
+        rgb(244, 124, 255),
+        #ffc6ee
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: grid;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    a{
+        
+        color: #fff;
+    }
+    &:hover{
+        box-shadow: .5rem .5rem 1rem #ccc;
+            
+    }
+    &:active{
+        transform: scale(.9);
+    }
+    
+}
+
+/*FIN DE MODIFICADORES INICIO*/

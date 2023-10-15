@@ -1,0 +1,231 @@
+@import "variables";
+/*SECCIÓN NUESTROS PRODUCTOS*/
+
+.nuestrosproductos{
+    min-height: 100vh;
+    width: 100%;
+    padding: 5%;
+    justify-content: center;
+    justify-items: center;
+    align-items: stretch;
+    align-content: start;
+    display: grid;
+    grid-template-areas:
+    "textonp textonp textonp textonp"
+    "producto1 producto2 producto3 producto4";
+
+    gap: 20px;
+    h1{
+        padding-bottom: 5%;
+        font-size: $sizeh1+20px;
+    }
+
+    img{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 0;
+        box-shadow: .5rem .5rem 1rem #b1b1b1;
+        transition:0.5s;
+        object-fit: cover;
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+
+    /*Ajustes de GRID*/
+
+    @media (min-width:768px) and (max-width:1023px){
+        
+        grid-template-areas:
+        "textonp textonp"
+        "producto1 producto2"
+        "producto3 producto4";
+    }
+    @media (max-width:767px){
+        
+        .textonp h1{
+            text-align: center;
+            align-content: stretch;
+            justify-content: stretch;
+            font-size: $sizeh1+5px;
+        }
+        /*.botonintro{
+            width: 100%;
+        }*/
+        grid-template-areas:
+        "textonp textonp"
+        "producto1 producto2"
+        "producto3 producto4";
+    }
+    @media (max-width:470px){
+        
+        
+        .textonp{
+            p{
+                text-align: start;
+                padding: 20%;
+            }
+            
+        
+        }
+        .producto1{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            padding: 10%;
+            
+            
+            p{
+                
+                text-align: center;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            h2{
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+                font-size: $sizeh1+2.5px;
+            }
+        }
+        .producto2{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            padding: 10%;
+            p{
+                
+                text-align: center;
+                padding: 20px 20px;
+            }
+            h2{
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+        .producto3{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            padding: 10%;
+            p{
+                
+                text-align: center;
+                padding: 20px 20px;
+            }
+            h2{
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+        .producto4{
+            display: flex;
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            padding: 10%;
+            p{
+                
+                text-align: center;
+                padding: 20px 20px;
+            }
+            h2{
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+        grid-template-areas:
+        "textonp"
+        "producto1"
+        "producto2"
+        "producto3"
+        "producto4";
+    }
+    
+    
+}
+
+.textonp{
+    grid-area: textonp;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.precio1{
+    font-weight: 500;
+}
+.producto1{
+    grid-area: producto1;
+    p{
+        width:200px;
+        text-align: left;
+        
+    }
+    h2{
+        text-align:left ;
+        padding-top: 15%;
+    }
+    
+}
+.producto2{
+    grid-area: producto2;
+    p{
+        width:200px;
+        text-align: left;
+        
+    }
+    h2{
+        text-align:left ;
+        padding-top: 15%;
+    }
+    
+}
+.producto3{
+    grid-area: producto3;
+    p{
+        width:200px;
+        text-align: left;
+        
+    }
+    h2{
+        text-align:left ;
+        padding-top: 15%;
+    }
+    
+}
+.producto4{
+    grid-area: producto4;
+    p{
+        width:200px;
+        text-align: left;
+        
+    }
+    h2{
+        text-align:left ;
+        padding-top: 15%;
+    }
+
+}
+/*Termina pagina productos*/
