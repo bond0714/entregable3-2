@@ -16,7 +16,7 @@
     height: auto;
     grid-template-areas: 
         "imgform formulariosm"
-        "imgform botonintro";
+        "imgform formulariosm";
     img{
     width: 50%;
     border-radius: 10px;
@@ -34,18 +34,19 @@
         
         .imgform{
             @include flexcolumncent;
-            
+            visibility: hidden;
         }
         .botonintro{
             width: 100%;
         }
         grid-template-areas:
-        "imgform"
         "formulariosm";
+        
     }
     @media (max-width:767px){
         .imgform{
             justify-content: center;
+            visibility: hidden;
         }
         
         #pquienes h1{
@@ -55,20 +56,24 @@
             width: 100%;
         }
         grid-template-areas:
-        "imgform"
         "formulariosm";
     }
-    @media (max-width:390px){
+    @media (max-width:480px){
         .imgform{
             justify-content: center;
+            visibility: hidden;
         }
         .botonintro{
             width: 100%;
             height: 80px;
         }
         grid-template-areas:
-        "imgform"
+        
         "formulariosm";
+        .formulariosm{
+            width: 100%;
+
+        }
     }
     
 }
@@ -89,5 +94,47 @@
     align-content: baseline;
     align-items: stretch;
 } 
+
+.formulariosm{
+    width: 450px;
+    margin: auto;
+    background:$negro;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 6px;
+
+    h2{
+        font-size: $sizeh1+2px;
+        color:$color-rosaclaro;
+    }
+}
+
+input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#botonenv{
+    background:$color-textnav;
+    color: $color-textnavlink;
+    padding: 20px;
+    &:hover{
+        cursor:crosshair;
+    }
+}
+
+
+
 
 /*Fin de pagina contacto*/
