@@ -7,11 +7,13 @@
 }
 
 .formulario{
+    @include flexcolumncent;
     display: grid;
     gap: 20px;
     padding: 5%;
-    text-align: center;
+    text-align:justify;
     width: 100%;
+    height: auto;
     grid-template-areas: 
         "imgform formulariosm"
         "imgform botonintro";
@@ -31,8 +33,7 @@
     @media (min-width:768px) and (max-width:1023px){
         
         .imgform{
-            display: flex;
-            flex-wrap: wrap;
+            @include flexcolumncent;
             
         }
         .botonintro{
@@ -43,6 +44,9 @@
         "formulariosm";
     }
     @media (max-width:767px){
+        .imgform{
+            justify-content: center;
+        }
         
         #pquienes h1{
             text-align: center;
@@ -55,6 +59,9 @@
         "formulariosm";
     }
     @media (max-width:390px){
+        .imgform{
+            justify-content: center;
+        }
         .botonintro{
             width: 100%;
             height: 80px;
@@ -68,6 +75,7 @@
 
 .pcontacto{
     padding: 20px;
+    font-size: $sizeh1;
 }
 
 .imgform{
@@ -76,7 +84,7 @@
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    justify-content: center;
+    justify-content: start;
     justify-items: center;
     align-content: baseline;
     align-items: stretch;

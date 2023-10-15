@@ -74,23 +74,34 @@
 <main class="formulario">
     
     <form class="formulariosm">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Nombre</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+        <form> 
+            <div class="nombreform">
+                <label for="nombre" >Nombre completo:</label><br>
+                <input type="text" id="nombre" placeholder="Ej. Alex Lopez">
             </div>
-        <div class="form-group">
-        <label for="exampleFormControlInput1">Dirección de correo</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
-        </div>
-
-        <div class="form-group">
-        <label for="exampleFormControlTextarea1">Escribenos tus mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-    </form>
+            <div class="telform">
+                <label for="telefono">Telefono:</label><br>
+                <input type="number" id="telefono" placeholder="(55)55555555">
+            </div>
+            <div class="sexform">
+                <input type="radio" name="sexo" value="1"> Masculino<br>
+                <input type="radio" name="sexo" value="2"> Femenino<br>
+            </div>
+            <div class="mailform">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="usuario@gmail.com">
+            </div>
+            <div class="msgform">
+                <label for="mensaje">Dejanos tu mensaje:</label><br>
+                <textarea id="mensaje" cols="30" rows="10" ></textarea>
+            </div>
+                
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar Formulario">
+        </form>
 
     <div class="imgform">
-        <img src="../img/Aretes2.jpg" alt="imagen del formulario de clientes">
+        <img src="../img/Cliente1.jpg" alt="imagen del formulario de clientes">
     </div>
     
     <a href="#" target="_self"><button class="botonintro" type="button" >

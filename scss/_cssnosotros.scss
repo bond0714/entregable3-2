@@ -13,11 +13,11 @@
     width: 50%;
     border-radius: 10px;
     box-shadow: .5rem .5rem 1rem #ccc;
-    transition:0.5s;
+    transition:$transicionseg;
     object-fit: cover;
     }
     img:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     p{
         grid-area: pquienes;

@@ -167,6 +167,7 @@
 }
 .botonintro:active {
   transform: scale(0.9);
+  transition: 0.9s;
 }
 
 /*FIN DE MODIFICADORES INICIO*/
@@ -182,11 +183,11 @@
   width: 50%;
   border-radius: 10px;
   box-shadow: 0.5rem 0.5rem 1rem #ccc;
-  transition: 0.5s;
+  transition: 0.9s;
   object-fit: cover;
 }
 .quienes img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .quienes p {
   grid-area: pquienes;
@@ -264,7 +265,7 @@
   border-radius: 8px;
   margin: 0;
   box-shadow: 0.5rem 0.5rem 1rem #b1b1b1;
-  transition: 0.5s;
+  transition: 0.9s;
   filter: opacity(0.4);
 }
 .nuestrosclientes img:hover {
@@ -400,11 +401,15 @@
 }
 
 .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   display: grid;
   gap: 20px;
   padding: 5%;
-  text-align: center;
+  text-align: justify;
   width: 100%;
+  height: auto;
   grid-template-areas: "imgform formulariosm" "imgform botonintro";
 }
 .formulario img {
@@ -424,7 +429,8 @@
   }
   .formulario .imgform {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
   }
   .formulario .botonintro {
     width: 100%;
@@ -433,6 +439,9 @@
 @media (max-width: 767px) {
   .formulario {
     grid-template-areas: "imgform" "formulariosm";
+  }
+  .formulario .imgform {
+    justify-content: center;
   }
   .formulario #pquienes h1 {
     text-align: center;
@@ -445,6 +454,9 @@
   .formulario {
     grid-template-areas: "imgform" "formulariosm";
   }
+  .formulario .imgform {
+    justify-content: center;
+  }
   .formulario .botonintro {
     width: 100%;
     height: 80px;
@@ -453,6 +465,7 @@
 
 .pcontacto {
   padding: 20px;
+  font-size: 20px;
 }
 
 .imgform {
@@ -461,7 +474,7 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  justify-content: center;
+  justify-content: start;
   justify-items: center;
   align-content: baseline;
   align-items: stretch;
@@ -627,7 +640,7 @@ a {
   border-radius: 8px;
   margin: 0;
   box-shadow: 0.5rem 0.5rem 1rem #b1b1b1;
-  transition: 0.5s;
+  transition: 0.9s;
   object-fit: cover;
 }
 .nuestrosproductos img:hover {

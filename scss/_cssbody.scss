@@ -125,6 +125,7 @@ img{
     }
     &:active{
         transform: scale(.9);
+        transition: $transicionseg;
     }
     
 }
