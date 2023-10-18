@@ -25,4 +25,9 @@ $tablet: (min-width:480px) and (max-width:728px);
 $desktop:(min-width:1024px);
 //Fin de variables de dispositivo//
 
+//MIXINS//
 
+@mixin flexcolumncent{
+    display:flex;
+    flex-direction: column;
+}

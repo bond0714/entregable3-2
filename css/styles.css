@@ -1,72 +1,4 @@
 @charset "UTF-8";
-/*MODIFICACIONES EN BOOTSTRAP*/
-.section {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar {
-  width: 100%;
-  max-width: 100%;
-  min-width: 350px;
-  margin: auto;
-  padding-top: 0px;
-  font-size: 120%;
-}
-.navbar a {
-  color: rgb(255, 59, 88);
-  font-weight: 400;
-}
-.navbar a:link {
-  color: rgb(255, 59, 88);
-}
-.navbar a:hover {
-  color: rgb(255, 59, 88);
-  font-weight: 600;
-  text-decoration: overline;
-}
-.navbar a:active {
-  color: rgb(255, 59, 88);
-  font-weight: 500;
-  text-decoration: overline;
-}
-.navbar ul {
-  padding-left: 50px;
-}
-.navbar-nav {
-  gap: 30px;
-}
-.navbar-toogler {
-  background-color: rgb(244, 112, 134);
-}
-
-.container-fluid {
-  background-color: rgb(255, 190, 201);
-  padding: 20px;
-}
-
-.carousel-item {
-  width: 100%;
-  height: 400px;
-  align-items: end;
-}
-
-.logonav {
-  width: 60%;
-  height: 50%;
-  padding: 20px;
-}
-.logonav div {
-  width: 70%;
-  height: 70%;
-  gap: 20px;
-  padding: 10px;
-}
-
 /*BODY - CONTENIDO*/
 .intro {
   display: grid;
@@ -400,20 +332,34 @@
   padding: 20px;
 }
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.imgform {
   display: grid;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  justify-items: center;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 1rem #ccc;
+  align-items: flex-start;
+  align-content: stretch;
+  justify-content: space-evenly;
+}
+
+.formulario {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   padding: 5%;
   text-align: justify;
   width: 100%;
   height: auto;
-  grid-template-areas: "imgform formulariosm" "imgform formulariosm";
+  grid-template-areas: "imgform formulariosm";
 }
 .formulario img {
-  width: 50%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0.5rem 0.5rem 1rem #ccc;
 }
@@ -430,7 +376,6 @@
   .formulario .imgform {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     visibility: hidden;
   }
   .formulario .botonintro {
@@ -472,18 +417,6 @@
 .pcontacto {
   padding: 20px;
   font-size: 20px;
-}
-
-.imgform {
-  grid-area: imgform;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  justify-content: start;
-  justify-items: center;
-  align-content: baseline;
-  align-items: stretch;
 }
 
 .formulariosm {
@@ -857,5 +790,76 @@ a {
 }
 
 /*Termina pagina productos*/
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+/*MODIFICACIONES EN BOOTSTRAP*/
+.section {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 100%;
+  min-width: 350px;
+  margin: auto;
+  padding-top: 0px;
+  font-size: 120%;
+}
+.navbar a {
+  color: rgb(255, 59, 88);
+  font-weight: 400;
+}
+.navbar a:link {
+  color: rgb(255, 59, 88);
+}
+.navbar a:hover {
+  color: rgb(255, 59, 88);
+  font-weight: 600;
+  text-decoration: overline;
+}
+.navbar a:active {
+  color: rgb(255, 59, 88);
+  font-weight: 500;
+  text-decoration: overline;
+}
+.navbar ul {
+  align-items: start;
+  padding-left: 10px;
+}
+.navbar ul li:hover {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgb(233, 207, 211);
+  transition: 0.9s;
+  transform: translate(5px);
+}
+.navbar-nav {
+  gap: 10px;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 400px;
+  align-items: end;
+}
+
+.logonav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  padding: 20px;
+}
 
 /*# sourceMappingURL=styles.css.map */

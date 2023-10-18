@@ -1,4 +1,14 @@
 @import "variables";
+
+
+header{
+    width: 100%;
+    position: sticky;
+    top:0;
+    z-index: 99;
+
+}
+
 /*MODIFICACIONES EN BOOTSTRAP*/
 
 .section{
@@ -41,21 +51,26 @@
         text-decoration:overline;
     }
     ul{
-        padding-left: 50px;
-    
+        
+        align-items: start;
+        padding-left: 10px;
+        
+        li{
+            
+            &:hover{
+                @include flexcolumncent;
+                width: 100%;
+                background: $color-rosaclaro;
+                transition:$transicionseg;
+                transform:translate(5px);
+            }
+        }
     }
     &-nav{
-        gap:30px;
-    }
-    &-toogler{
-        background-color: $color-textnavlink;
+        gap:10px;
+        
     }
     
-}
-
-.container-fluid{
-    background-color: $bg-colormenu;
-    padding:20px;
 }
 
 .carousel-item{
@@ -65,16 +80,9 @@
 }
 
 .logonav{
-    width:60%;
-    height: 50%;
+    @include flexcolumncent;
+    justify-content: flex-start;
+    width:40%;
     padding: 20px;
     
-    div{
-        width: 70%;
-        height: 70%;
-        gap:20px;
-        padding: 10px;
-    }
-            
-
     } 
