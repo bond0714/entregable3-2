@@ -328,21 +328,16 @@
 
 /*Termina CLIENTES*/
 /*CONTACTO*/
-.tituloconta {
-  padding: 20px;
+.bdcontacto {
+  background: linear-gradient(rgba(116, 116, 116, 0.5), white), url(/img/Cliente1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.imgform {
-  display: grid;
-  width: 450px;
-  height: 450px;
-  overflow: hidden;
-  justify-items: center;
-  border-radius: 10px;
-  box-shadow: 0.5rem 0.5rem 1rem #ccc;
-  align-items: flex-start;
-  align-content: stretch;
-  justify-content: space-evenly;
+.tituloconta {
+  padding: 20px;
 }
 
 .formulario {
@@ -350,18 +345,10 @@
   align-content: center;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 5%;
   text-align: justify;
   width: 100%;
   height: auto;
-  grid-template-areas: "imgform formulariosm";
-}
-.formulario img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0.5rem 0.5rem 1rem #ccc;
+  grid-template-areas: "formulariosm";
 }
 .formulario p {
   grid-area: pcontacto;
@@ -373,11 +360,6 @@
   .formulario {
     grid-template-areas: "formulariosm";
   }
-  .formulario .imgform {
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-  }
   .formulario .botonintro {
     width: 100%;
   }
@@ -385,10 +367,6 @@
 @media (max-width: 767px) {
   .formulario {
     grid-template-areas: "formulariosm";
-  }
-  .formulario .imgform {
-    justify-content: center;
-    visibility: hidden;
   }
   .formulario #pquienes h1 {
     text-align: center;
@@ -400,10 +378,6 @@
 @media (max-width: 480px) {
   .formulario {
     grid-template-areas: "formulariosm";
-  }
-  .formulario .imgform {
-    justify-content: center;
-    visibility: hidden;
   }
   .formulario .botonintro {
     width: 100%;
@@ -420,6 +394,8 @@
 }
 
 .formulariosm {
+  display: grid;
+  grid-area: formulariosm;
   width: 450px;
   margin: auto;
   background: black;
@@ -440,21 +416,14 @@ input, textarea {
   box-sizing: border-box;
   font-size: 17px;
   border: none;
+  border-radius: 6px;
 }
 
 textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
-}
-
-#botonenv {
-  background: rgb(255, 59, 88);
-  color: rgb(244, 112, 134);
-  padding: 20px;
-}
-#botonenv:hover {
-  cursor: crosshair;
+  border-radius: 6px;
 }
 
 /*Fin de pagina contacto*/

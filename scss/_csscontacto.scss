@@ -1,44 +1,30 @@
 @import "variables";
 /*CONTACTO*/
 
+.bdcontacto{
+    background: linear-gradient(rgba($gris,.50),rgba($color-fondo,1)),url(/img/Cliente1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
 .tituloconta{
     padding: 20px;
 
 }
-.imgform{
-    display:grid;
-    width: 450px;
-    height: 450px;
-    overflow: hidden;
-    justify-items: center;
-    border-radius: 10px;
-    box-shadow: .5rem .5rem 1rem #ccc;
-    align-items: flex-start;
-    align-content: stretch;
-    justify-content: space-evenly;
-    
-} 
-
 .formulario{
     
     display: grid;
     align-content: center;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 5%;
     text-align:justify;
     width: 100%;
     height: auto;
     grid-template-areas: 
-    "imgform formulariosm";
-    img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: .5rem .5rem 1rem #ccc;
-    
-    }
+    "formulariosm";
     p{
         grid-area: pcontacto;
         text-align:start;
@@ -48,10 +34,6 @@
     }
     @media (min-width:768px) and (max-width:1023px){
         
-        .imgform{
-            @include flexcolumncent;
-            visibility: hidden;
-        }
         .botonintro{
             width: 100%;
         }
@@ -60,10 +42,6 @@
         
     }
     @media (max-width:767px){
-        .imgform{
-            justify-content: center;
-            visibility: hidden;
-        }
         
         #pquienes h1{
             text-align: center;
@@ -75,20 +53,15 @@
         "formulariosm";
     }
     @media (max-width:480px){
-        .imgform{
-            justify-content: center;
-            visibility: hidden;
-        }
         .botonintro{
             width: 100%;
             height: 80px;
         }
         grid-template-areas:
-        
         "formulariosm";
+        
         .formulariosm{
             width: 100%;
-
         }
     }
     
@@ -99,9 +72,9 @@
     font-size: $sizeh1;
 }
 
-
-
 .formulariosm{
+    display: grid;
+    grid-area: formulariosm;
     width: 450px;
     margin: auto;
     background:$negro;
@@ -123,21 +96,14 @@ input,textarea{
     box-sizing: border-box;
     font-size: 17px;
     border: none;
+    border-radius: 6px;
 }
 
 textarea{
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
-}
-
-#botonenv{
-    background:$color-textnav;
-    color: $color-textnavlink;
-    padding: 20px;
-    &:hover{
-        cursor:crosshair;
-    }
+    border-radius: 6px;
 }
 
 
